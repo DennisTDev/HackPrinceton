@@ -14,22 +14,6 @@ public class Muse : MonoBehaviour {
     public Image[] headbandSensors;
     public Image headbandDisconnected;
 
-    public void startScanning() {
-        // Must register at least MuseListeners before scanning for headbands.
-        // Otherwise no callbacks will be triggered to get a notification.
-        muse.startListening();
-    }
-
-    public void connect(string pairedMuse) {
-        Debug.Log ("Connecting to " + pairedMuse);
-        muse.connect (pairedMuse);
-    }
-
-    public void disconnect() {
-        Debug.Log ("Disconnected from Muse");
-        muse.disconnect ();
-    }
-
     //--------------------------------------
     // Private Members
 
@@ -50,6 +34,22 @@ public class Muse : MonoBehaviour {
         connectionBuffer = "";
         registerListeners();
         registerAllData();
+    }
+
+    private void startScanning() {
+        // Must register at least MuseListeners before scanning for headbands.
+        // Otherwise no callbacks will be triggered to get a notification.
+        muse.startListening();
+    }
+
+    private void connect(string pairedMuse) {
+        Debug.Log ("Connecting to " + pairedMuse);
+        muse.connect (pairedMuse);
+    }
+
+    private void disconnect() {
+        Debug.Log ("Disconnected from Muse");
+        muse.disconnect ();
     }
 
     void registerListeners() {
