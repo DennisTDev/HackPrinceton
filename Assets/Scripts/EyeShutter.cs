@@ -26,6 +26,8 @@ public class EyeShutter : MonoBehaviour {
 			SetTopLidY(screenSize.y);
 			SetBottomLidY(-screenSize.y / 2);
 		}
+		topLid.sizeDelta = new Vector2(topLid.sizeDelta.x, screenSize.y / 2);
+		bottomLid.sizeDelta = new Vector2(bottomLid.sizeDelta.x, screenSize.y / 2);
 	}
 
 	public void Open () {
