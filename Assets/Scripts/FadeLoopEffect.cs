@@ -33,7 +33,10 @@ public class FadeLoopEffect : MonoBehaviour {
 		}
 		if (i == 100) {
 			Fade (false, 1.25f); 
-			i = 0;
+
+
+				i = 0;
+			
 		}
 		if (!isInTransition) {
 			return;
