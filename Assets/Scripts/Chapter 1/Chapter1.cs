@@ -22,6 +22,9 @@ public class Chapter1 : MonoBehaviour {
 		narration.SetActive(true);
 		yield return new WaitForSeconds(16);
 		eyes.Open();
+		yield return new WaitForSeconds(45);
+		eyes.Close();
+		yield return new WaitForSeconds(3);
 	}
 
 	
