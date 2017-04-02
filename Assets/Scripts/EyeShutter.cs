@@ -52,7 +52,7 @@ public class EyeShutter : MonoBehaviour {
 
 	void Update () {
 		elapsed += Time.deltaTime;
-		if (elapsed >= duration) {
+		if (elapsed > duration) {
 			elapsed = duration;
 		}
 		float t = elapsed / duration;
