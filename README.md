@@ -16,7 +16,7 @@ The game scenario rewards the calmer users with high scores upon finishing each 
 
 We envision Prosody used in safety training simulations or proactive support for individuals with mental health issues.
 
-##How we built it
+## How we built it
 
 Muse headband outputs data in relative values of alpha, beta, gamma, delta, and theta waves. Tracking percentage of beta and gamma waves, associated with stress, we can determine how calm the user is.
 
