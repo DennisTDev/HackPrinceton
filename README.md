@@ -18,12 +18,12 @@ We envision Prosody used in safety training simulations or proactive support for
 
 ## How we built it
 
-Muse headband outputs data in relative values of alpha, beta, gamma, delta, and theta waves. Tracking percentage of beta and gamma waves, associated with stress, we can determine how calm the user is.
+* Muse headband outputs data in relative values of alpha, beta, gamma, delta, and theta waves. Tracking percentage of beta and gamma waves, associated with stress, we can determine how calm the user is.
 
-3D scenes were built in Unity and with support for the Google Cardboard in mind.
+* 3D scenes were built in Unity and with support for the Google Cardboard in mind.
 
-Bluetooth controller to allow the player to navigate the world while the headset is on.
+* Bluetooth controller to allow the player to navigate the world while the headset is on.
 
-Amazon Polly was used to generate the narration. We used Speech Synthesis Markup Language (SSML) to make the speech more realistic -- adding pauses and emphasis.
+* Amazon Polly was used to generate the narration. We used Speech Synthesis Markup Language (SSML) to make the speech more realistic -- adding pauses and emphasis.
 
 [Read more on our DevPost](https://devpost.com/software/prosody)
