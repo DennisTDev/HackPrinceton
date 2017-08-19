@@ -58,12 +58,12 @@ public class EyeShutter : MonoBehaviour {
 		float t = elapsed / duration;
 		switch (state) {
 			case EyeShutterState.Opening:
-				SetTopLidY((screenSize.y / 2) + ((screenSize.y / 2) * t));
-				SetBottomLidY(-((screenSize.y / 2) * t));
+				SetTopLidY((screenSize.y / 2) + (15 * t));
+				SetBottomLidY(-(15 * t));
 				break;
 			case EyeShutterState.Closing:
-				SetTopLidY((screenSize.y) - ((screenSize.y / 2) * t));
-				SetBottomLidY(-((screenSize.y / 2) * (1 - t)));
+				SetTopLidY((screenSize.y) - (15 * t));
+				SetBottomLidY(-(15 * (1 - t)));
 				break;
 		}
 		if (elapsed == duration) {
